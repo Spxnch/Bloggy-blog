@@ -1,0 +1,114 @@
+:root{
+    --main-color: #E2E0DF;
+    --nav-color: #B8B8B7;
+    --text-color: #0A0908;
+    --details-color: #9FB983;
+    --nav-hover: #dbdbdb;
+}
+
+@font-face {
+    font-family: 'NeutralFace';
+    src: url('../assets/fonts/NeutralFace.otf');
+}
+
+@font-face {
+    font-family: 'NeutralFaceBold';
+    src: url('../assets/fonts/NeutralFace-Bold.otf');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    color: #9FB983;
+    font-family: 'NeutralFaceBold';
+}
+
+.left-nav {
+    position: fixed;
+    height: 100vh;
+    width: 16rem;
+    background-color: var(--nav-color);
+    display: flex;
+    flex-direction: column;
+}
+
+    .left-nav .title {
+        position: relative;
+        height: 5rem;
+        padding-left: 2rem;
+        padding-top: 1.5rem;
+        color: black;
+    }
+
+    .left-nav_content {
+        position: relative;
+        width: 100%;
+    }
+
+        .left-nav_content ul {
+            border-bottom: 1px solid rgb(201, 201, 201);
+            padding-bottom: 1rem;
+            border-top: 1px solid rgb(201, 201, 201);
+            padding-top: 1rem;
+        }
+
+        .left-nav_content ul li {
+            position: relative;
+            height: 5rem;
+        }
+
+            .left-nav_content ul li a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                font-size: 2rem;
+                padding-left: 2rem;
+                padding-top: 1.1rem;
+                font-family: 'NeutralFace';
+                color: black;
+                transition: 0.6s;
+            }
+
+            .left-nav_content ul li a:hover {
+                background-color: var(--nav-hover);
+                transition: 0.4s;
+                animation: hover-a .2s;
+                padding-left: 2.2rem;
+            }
+
+@keyframes hover-a {
+    0% {width: 0;} 100% {width: 100%;}
+}
+
+    .user-info {
+        position: relative;
+        font-family: 'NeutralFace';
+        color: black;
+        padding-left: 2rem;
+        padding-top: 1.5rem;
+        align-items: center;
+    }
+    
+    .user-info .user {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        text-transform: lowercase;
+    }
+
+        .user-info .user .name {
+            padding: 0.3rem;
+        }
+
+        .user-info .user .icon {
+            background-image: url(/assets/images/usuario.png);
+            width: 32px;
+            height: 32px;
+            transform: scale(0.6);
+        }
