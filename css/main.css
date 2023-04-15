@@ -1,6 +1,6 @@
 :root{
     --main-color: #E2E0DF;
-    --nav-color: #B8B8B7;
+    --nav-color: #B8B8B7; 
     --text-color: #0A0908;
     --details-color: #9FB983;
 }
@@ -15,8 +15,80 @@
     src: url('../assets/fonts/NeutralFace-Bold.otf');
   }
 
-body{
-  color: #9FB983;
-  font-family: 'NeutralFaceBold';
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-  
+
+body{
+  background-color: var(--main-color);
+}
+
+header{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 90px;
+  padding: 5px 5%;
+  border-bottom: 1px solid #0A0908;
+}
+
+header .logo{
+  cursor: pointer;
+  margin-right: auto;
+  width: 99px;
+  height: 20px;
+}
+
+header .logo img{
+  width: 99px;
+  height: 20px;
+}
+
+header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header .nav-links a{
+  font-family: 'NeutralFace';
+  font-size: 15px;
+  color: var(--text-color);
+  text-decoration: none;    
+}
+
+main{
+  height: 563px;
+}
+
+h1{
+  position: absolute;
+  font-family: 'NeutralFaceBold';
+  font-size: 128px;
+  padding: 40px 3%;
+}
+
+.umsb{
+  height: 423px;
+}
+
+.ppt {
+  font-family: 'NeutralFace';
+  text-align: center;
+  font-size: 32px;
+  filter: blur(2px);
+}
+
+footer{
+  font-family: 'NeutralFaceBold';
+  font-size: 36px;
+  text-align: center;
+  height: 60px;
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+
+
+
+
