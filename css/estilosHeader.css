@@ -1,0 +1,59 @@
+:root {
+    --main-color: #E2E0DF;
+    --nav-color: #B8B8B7;
+    --text-color: #0A0908;
+    --details-color: #9FB983;
+}
+
+@font-face {
+    font-family: 'NeutralFace';
+    src: url('../../../assets/fonts/NeutralFace.otf');
+}
+
+@font-face {
+    font-family: 'NeutralFaceBold';
+    src: url('../../../assets/fonts/NeutralFace-Bold.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90px;
+    padding: 5px 5%;
+    border-bottom: 1px solid #0A0908;
+}
+
+header .logo {
+    cursor: pointer;
+    margin-right: auto;
+    width: 99px;
+    height: 20px;
+}
+
+header .logo img {
+    width: 99px;
+    height: 20px;
+}
+
+header .nav-links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+header .nav-links a {
+    font-family: 'NeutralFace';
+    font-size: 15px;
+    color: var(--text-color);
+    text-decoration: none;
+}

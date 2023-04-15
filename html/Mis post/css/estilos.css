@@ -1,0 +1,93 @@
+:root {
+    --main-color: #E2E0DF;
+    --nav-color: #B8B8B7;
+    --text-color: #0A0908;
+    --details-color: #9FB983;
+}
+
+@font-face {
+    font-family: 'NeutralFace';
+    src: url('../../../assets/fonts/NeutralFace.otf');
+}
+
+@font-face {
+    font-family: 'NeutralFaceBold';
+    src: url('../../../assets/fonts/NeutralFace-Bold.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+main .buscar{
+    position: relative;
+    height: 70px;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+main .buscar #buscar-post{
+    position: relative;
+    height: 35px;
+    width: 320px;
+    background-color: var(--main-color);
+    box-sizing: border-box;
+    border: 1px solid #0A0908;
+    border-radius: 4px;
+}
+
+main h2{
+    position: relative;
+    padding: 30px;
+    font-family: 'NeutralFaceBold';
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+main .post{
+    position: relative;
+    height: auto;
+    padding: 30px;
+    width: 80%;
+    border: 1px solid #0A0908;
+    border-radius: 2px;
+    margin-left: 30px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+main .post h3{
+    position: relative;
+    font-family: 'NeutralFace';
+    
+}
+
+main .post .datos{
+    position: relative;
+    margin: 20px 10px;
+}
+
+main .post .datos label{
+    padding: 0 20px;
+    font-family: 'NeutralFace';
+    letter-spacing: 2px;   
+}
+
+main .post .datos :first-child{   
+    letter-spacing: 6px;   
+}
+
+main .post .content-post{
+    position: relative;
+    font-family: 'NeutralFace';
+    font-size: 15px;
+}
