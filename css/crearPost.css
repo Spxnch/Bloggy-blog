@@ -1,0 +1,91 @@
+:root {
+    --main-color: #E2E0DF;
+    --nav-color: #B8B8B7;
+    --text-color: #0A0908;
+    --details-color: #9FB983;
+}
+
+@font-face {
+    font-family: 'NeutralFace';
+    src: url('../../../assets/fonts/NeutralFace.otf');
+}
+
+@font-face {
+    font-family: 'NeutralFaceBold';
+    src: url('../../../assets/fonts/NeutralFace-Bold.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+.contenedor {
+    margin-left: 450px;
+    color: black;
+}
+
+    .contenedor .campo {
+        padding-top: 1rem;
+    }
+
+    .contenedor .titulo {
+        padding-top: 4.5rem;
+    }
+
+    .contenedor textarea {
+        resize: none;
+        border: 2px solid black;
+        padding-left: 5px;
+        padding-top: 5px;
+        font-family: 'NeutralFace';
+        outline: none;
+    }
+
+    .contenedor .campo textarea {
+        width: 80%;
+        height: 4rem;
+    }
+
+    .contenedor .contenido textarea {
+        width: 80%;
+        height: 8rem;
+    }
+
+    .contenedor .campo h2 {
+        font-family: 'NeutralFace';
+        margin-bottom: 1rem;
+    }
+
+    .campo .categorias {
+        width: 80%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+    }
+
+    .campo .categorias .btn-categoria {
+        border: 2px solid black;
+        width: 8rem;
+        height: 2rem;
+        text-align: center;
+        line-height: 1.7rem;
+        transition: 0.5s;
+    }
+
+    .campo .categorias .btn-categoria:hover {
+        background-color: var(--details-color);
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+
+
