@@ -1,5 +1,5 @@
 document.body.innerHTML = `
-    <aside class="left-nav">
+    <aside class="left-nav"> 
         <div class="logo">
             <img src="../../assets/images/Group 1.png" alt="logo">
         </div>
