@@ -30,6 +30,7 @@ body {
 /* Estilos del cuerpo principal */
 main {
   height: 563px;
+  max-width: 1800px;
 }
 
 h1 {
@@ -56,6 +57,7 @@ footer {
   font-size: 36px;
   text-align: center;
   height: 60px;
+  
   background-color: var(--text-color);
   color: var(--main-color);
   display: flex;
@@ -90,6 +92,46 @@ footer {
   transform: rotate(41deg);
 }
 
+
+@media only screen and (max-width: 768px) {
+  body{
+    height: calc(100vh - 80px);
+  }
+  main{
+    width: auto;
+    height: calc(100vh - 380px);
+  }
+  .txtPrincipal h1 {
+    font-size: 75px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .decoracion {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .decoracion .circulo{
+    left: 155px;
+    border: 1px solid var(--details-color);
+    z-index: -1;
+  }
+
+  .decoracion .elipse{
+    left: 155px;
+    border: 1px solid var(--details-color);
+    z-index: -1;
+  }
+  
+  footer {
+    font-size: 16px;
+    height: auto;
+    width: auto;
+
+  }
+
+}
 
 
 

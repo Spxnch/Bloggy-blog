@@ -10,8 +10,8 @@ document.body.innerHTML = `
     </div>
     <nav class="menu">
     <ul class="menu-nav">
-        <li class="nav-item"><a href="#" class="nav-link">Inicio de sesion</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Registarte</a></li>
+        <li class="nav-item"><a href="./Iniciosesion.html" class="nav-link">Inicio de sesion</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Registrate</a></li>
     </ul>
     </nav>
     </header>

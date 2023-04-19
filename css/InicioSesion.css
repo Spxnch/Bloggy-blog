@@ -1,0 +1,95 @@
+:root {
+    --main-color: #E2E0DF;
+    --nav-color: #B8B8B7;
+    --text-color: #0A0908;
+    --details-color: #9FB983;
+}
+
+@font-face {
+    font-family: 'NeutralFace';
+    src: url('../../../assets/fonts/NeutralFace.otf');
+}
+
+@font-face {
+    font-family: 'NeutralFaceBold';
+    src: url('../../../assets/fonts/NeutralFace-Bold.otf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+h1{
+    font-family: 'NeutralFaceBold';
+    text-align: center;
+    margin-top: 70px;
+    font-size: 32px;
+}
+
+p{
+    font-family: 'NeutralFace';
+    text-align: center;
+    font-size: 24px;
+    margin-top: 25px;
+    filter: blur(1.5px);
+}
+
+.form{
+    display: grid; 
+    place-items: center;
+}
+
+input{
+    display: block; 
+    border: none;
+    border-bottom: 1px solid var(--text-color);
+    width: 620px;
+    margin-top: 80px;
+    background-color: transparent;
+}
+
+::placeholder{
+    color: var(--text-color);
+}
+
+button{
+    width: 270px;
+    height: 70px;
+    font-size: 16px;
+    margin-top: 80px;
+    background-color: transparent;
+    font-family: 'NeutralFace';
+}
+
+button:hover {
+    background-color: var(--nav-color);
+}
+
+a{  
+    font-size: 18px;
+    margin-top: 25px;
+    color: var(--text-color);
+    font-family: 'NeutralFace';
+}
+
+
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 38px;
+    }
+    
+    p{
+        font-size: 16px;
+    }
+
+    input{
+        width: 300px;
+    }
+  }

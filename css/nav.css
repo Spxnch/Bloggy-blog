@@ -65,7 +65,7 @@ header .logo {
     display: block;
     padding: 0 1rem;
     font-size: 18px;
-    line-height: 50px;
+    line-height: 40px;
     color: #0A0908;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
@@ -94,9 +94,10 @@ header .logo {
       top: 80px;
       left: -100%;
       width: 100%;
-      height: calc(80vh - 10px);
+      height: calc(110vh - 80px);
       background-color: #E2E0DF;
       transition: all 0.3s ease-in-out;
+      padding: 100px;
       z-index: 1;
     }
     
@@ -105,9 +106,11 @@ header .logo {
     }
     
     .nav-item {
-      width: 100%;
+      max-width: 300px;
+      min-width: 150px;
     }
-    
+
+
     .menu-btn {
       display: block;
     }
