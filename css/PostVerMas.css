@@ -124,6 +124,9 @@ main .post .comment-area .new-comment textarea {
     border: 1px solid #0A0908;
     border-radius: 4px;
     padding: 14px;
+    font-family: 'NeutralFace';
+    font-size: 10px;
+    letter-spacing: 2px;
 }
 
 main .post .comment-area .comments {
@@ -145,4 +148,8 @@ main .post .comment-area .comments .comment-user{
 
 main .post .comment-area .comments .comment-user h5{
     padding-bottom: 20px;
+}
+
+main .post .comment-area .comments .comment-user p{
+    font-size: 12px;
 }
