@@ -1,7 +1,9 @@
 document.body.innerHTML = `
     <header>
     <div class="logo">
-    <img src="../assets/images/Group 1.png" alt="Logo">
+        <a href="../html/landing.html">
+            <img src="../assets/images/Group 1.png" alt="Logo">
+        </a>
     </div>
     <div class="menu-btn">
     <div class="btn-line"></div>

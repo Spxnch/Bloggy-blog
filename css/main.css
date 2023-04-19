@@ -20,11 +20,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 
 /* Estilos del cuerpo */
 body {
   background-color: var(--main-color);
+  height: 100%;
 }
 
 /* Estilos del cuerpo principal */
@@ -57,7 +59,6 @@ footer {
   font-size: 36px;
   text-align: center;
   height: 60px;
-  
   background-color: var(--text-color);
   color: var(--main-color);
   display: flex;
@@ -93,13 +94,11 @@ footer {
 }
 
 
-@media only screen and (max-width: 768px) {
-  body{
-    height: calc(100vh - 80px);
-  }
+@media only screen and (max-width: 480px) {
+ 
   main{
-    width: auto;
-    height: calc(100vh - 380px);
+    width: 400px;
+    height: 635px;
   }
   .txtPrincipal h1 {
     font-size: 75px;
@@ -125,12 +124,12 @@ footer {
   }
   
   footer {
-    font-size: 16px;
-    height: auto;
-    width: auto;
-
+    font-size: 12px;
+    width:400px;
+    display: inline-flex;
   }
 
+ 
 }
 
 
