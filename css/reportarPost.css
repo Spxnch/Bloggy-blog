@@ -1,0 +1,64 @@
+:root{
+--main-color: #E2E0DF;
+  --nav-color: #B8B8B7;
+  --text-color: #0A0908;
+  --details-color: #9FB983;
+}
+
+@font-face {
+    font-family: 'NeutralFace';
+    src: url('../assets/fonts/NeutralFace.otf');
+  }
+  
+@font-face {
+    font-family: 'NeutralFaceBold';
+    src: url('../assets/fonts/NeutralFace-Bold.otf');
+}
+  
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-color);
+    height: 100%;
+}
+
+.contenedor{
+    position: relative;
+    margin-left: 350px; 
+}
+
+h1{
+    font-family: 'NeutralFace';
+    color: var(--text-color);
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+
+h2{
+    color: var(--text-color);
+    font-size: 30px;
+}
+
+.infoPublicacion{
+    display: flex;
+    font-family: 'NeutralFace';
+    color: var(--text-color);
+    font-size: 15px;
+    width: 900px;
+    margin-top: 12px;
+}
+
+.fecha{
+    margin-left: auto;
+    display: inline-block;
+    text-align: right;
+}
+
+.form{
+    font-family: 'NeutralFace';
+    color: var(--text-color);
+}
