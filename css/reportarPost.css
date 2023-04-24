@@ -21,6 +21,8 @@
     padding: 0;
 }
 
+
+
 body {
     background-color: var(--main-color);
     height: 100%;
@@ -45,11 +47,15 @@ h2{
 
 .infoPublicacion{
     display: flex;
-    font-family: 'NeutralFace';
+    
     color: var(--text-color);
     font-size: 15px;
     width: 900px;
     margin-top: 12px;
+}
+
+.usuario, .fecha{
+    font-family: 'NeutralFace';
 }
 
 .fecha{
@@ -62,3 +68,99 @@ h2{
     font-family: 'NeutralFace';
     color: var(--text-color);
 }
+
+.reporte,.problema{
+    margin-top:40px;
+}
+
+button{
+    display: inline-block;
+    margin-top: 25px;
+    width: 146px;
+    height: 35px;
+    font-size: 13px;
+    border: 1px solid var(--text-color);
+    font-family: 'NeutralFaceBold';
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+input{
+    margin-top: 15px;
+    width: 915px;
+    height: 95px;
+    font-family: 'NeutralFace';
+    background-color: transparent;
+    vertical-align: top;
+}
+
+.enviar{
+    font-family: 'NeutralFace';
+    width: 146px;
+    height: 43px;
+    margin-top: 60px;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    width: 1000px;
+}
+
+button:hover{
+   background-color: var(--details-color);
+}
+
+#button {
+    background: var(--text-color);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 1000px;
+    top: calc(10% - 50px);
+}
+  
+.b1,
+.b2,
+.b3,
+.b4 {
+    background: var(--main-color); 
+    height: 4px;
+    width: 40px;
+    position: absolute;
+    left: 11px;
+    top: 48px;
+    transition: all .3s ease-in-out;
+    transform-origin: 38px 2px;
+}
+  
+  .close-back {
+    left: calc(50% - 110px);
+  }
+  .close-back .b1 {
+    transform: translateX(0) rotate(45deg);
+  }
+  .close-back .b2 {
+    transform: translateX(0) rotate(135deg);
+  }
+  .close-back .b3 {
+    transform: translateX(0) rotate(225deg);
+  }
+  .close-back .b4 {
+    transform: translateX(0) rotate(315deg);
+  }
+  .close-back:hover .b1 {
+    transform: translateX(-21px) rotate(135deg);
+  }
+  .close-back:hover .b2 {
+    transform: translateX(-20px) rotate(180deg);
+  }
+  .close-back:hover .b3 {
+    transform: translateX(-20px) rotate(180deg);
+  }
+  .close-back:hover .b4 {
+    transform: translateX(-21px) rotate(225deg);
+  }
