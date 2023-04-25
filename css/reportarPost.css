@@ -21,8 +21,6 @@
     padding: 0;
 }
 
-
-
 body {
     background-color: var(--main-color);
     height: 100%;
@@ -47,7 +45,6 @@ h2{
 
 .infoPublicacion{
     display: flex;
-    
     color: var(--text-color);
     font-size: 15px;
     width: 900px;
@@ -75,23 +72,25 @@ h2{
 
 button{
     display: inline-block;
-    margin-top: 25px;
-    width: 146px;
-    height: 35px;
-    font-size: 13px;
     border: 1px solid var(--text-color);
     font-family: 'NeutralFaceBold';
     vertical-align: middle;
     background-color: transparent;
+    margin-top: 25px;
+    width: 146px;
+    height: 35px;
+    font-size: 13px;
+  
 }
 
 input{
-    margin-top: 15px;
-    width: 915px;
-    height: 95px;
     font-family: 'NeutralFace';
     background-color: transparent;
     vertical-align: top;
+    margin-top: 25px;
+    width: 915px;
+    height: 120px;
+    
 }
 
 .enviar{
@@ -112,13 +111,17 @@ button:hover{
    background-color: var(--details-color);
 }
 
+button:focus{
+   background-color: var(--details-color);
+}
+
 #button {
+    position: absolute;
+    cursor: pointer;
     background: var(--text-color);
     border-radius: 50%;
-    cursor: pointer;
     height: 100px;
     width: 100px;
-    position: absolute;
     left: 1000px;
     top: calc(10% - 50px);
 }
@@ -164,3 +167,7 @@ button:hover{
   .close-back:hover .b4 {
     transform: translateX(-21px) rotate(225deg);
   }
+
+
+
+  
